@@ -4,8 +4,6 @@ WORKDIR /install
 
 RUN apt-get update && apt-get install curl unzip -y
 
-RUN printenv
-
 RUN curl -fsSL https://deno.land/x/install/install.sh | sh
 
 ENV DENO_INSTALL="/root/.deno"
