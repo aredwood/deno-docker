@@ -14,4 +14,5 @@ This is a docker file which when built will contain the latest deno release by d
 ```
 PS> $pwd = (pwd).path
 PS> docker run -p 8000:8000 --volume ($pwd + ":/app") aredwood/deno run --allow-net server.ts 
+PS> curl http://localhost:8000
 ```
